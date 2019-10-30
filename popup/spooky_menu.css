@@ -1,0 +1,31 @@
+html, body {
+    width: 100px;
+}
+
+.hidden {
+    display: none;
+}
+
+.button {
+    margin: 3% auto;
+    padding: 4px;
+    text-align: center;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.spooky:hover {
+    background-color: #eb6123;
+}
+
+.spooky {
+    background-color: #c64a12;
+}
+
+.reset {
+    background-color: #ffffff;
+}
+
+.reset:hover {
+    background-color: #f0ead6;
+}

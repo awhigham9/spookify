@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+    "name": "Spookify",
+    "version": "1.0",
+
+    "description": "Adds a browser action icon to the toolbar. Click to make the broswer spooky",
+
+    "icons": {
+        "48": "icons/ghost-icon.svg",
+        "96": "icons/ghost-icon.svg"
+    },
+
+    "permissions": [
+        "activeTab"
+    ],
+
+    "browser_action": {
+        "default_icon": "icons/ghost-icon.svg",
+        "default_title": "Spookify",
+        "default_popup": "popup/spooky_menu.html"
+    },
+
+    "web_accessible_resources": [
+        "assets/spooky-trumpet.png",
+        "assets/skeleton-angry.jpg",
+        "assets/spookybois.jpg"
+    ]
+
+} 
