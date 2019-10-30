@@ -31,7 +31,7 @@ function listenForClicks() {
     function assetNameToURL(name) {
         switch(name) {
             case "Spooky":
-                return browser.extension.getURL("assets/skull-trumpet.jpg");
+                return browser.extension.getURL("assets/skull-trumpet.png");
             case "Spookier":
                 return browser.extension.getURL("assets/skeleton-angry.jpg");
             case "Spookiest":

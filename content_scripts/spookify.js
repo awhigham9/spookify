@@ -18,10 +18,11 @@
      * that image, then insert the node into the document.
      */
     function insertImage(imageURL){
+        console.log("here")
         removeExistingImages();
         let spookyImage =  document.createElement("img");
         spookyImage.setAttribute("src", imageURL);
-        spookyImage.style.height = "50vh";
+        spookyImage.style.height = "100vh";
         spookyImage.className = "spooky-image";
         document.body.appendChild(spookyImage);
     }
@@ -40,7 +41,8 @@
      * Listen for messages from the background script
      * Call spookify() or reset()
      */
-    broswer.runtime.onMessage.addListener((message) => {
+    browser.runtime.onMessage.addListener((message) => {
+        console.log("here 2")
         if (message.command === "spookify") {
             insertImage(message.imageURL);
         }
